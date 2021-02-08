@@ -18,7 +18,7 @@ int main()
         money=tel;
         float new=money-400;
         new=new*2;
-        printf("%d",299+new);
+        printf("%.2f",299+new);
     }
     return 0;
 }
