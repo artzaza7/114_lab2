@@ -17,7 +17,7 @@ int main()
     printf("C");
     else if(a+b+c>=55)
     printf("D๙");
-    else if(a+b+c> =50)
+    else if(a+b+c>=50)
     printf("D");
     else 
     printf("F");
