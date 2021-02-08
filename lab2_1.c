@@ -1,15 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c;
-    scanf("%d",&a);
-    scanf("%d",&b);
-    scanf("%d",&c); 
+    float a,b,c;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    scanf("%f",&c); 
     int sum=a+b+c;
     if(sum>=80)
-    {
-        printf("A");
-    }
+    printf("A");
     else if(sum>=75&&sum<=79)
     printf("B");
     else if(sum>=70&&sum<=74)
@@ -22,6 +20,7 @@ int main()
     printf("D");
     else if(sum>=50&&sum<=54)
     printf("D+");
-    else printf("F");
+    else 
+    printf("F");
     return 0;
 }
