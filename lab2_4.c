@@ -5,6 +5,7 @@ int main()
     int number;
     scanf("%c",&ans);
     scanf("%d",&number);
+    if(number>=1&number<=31){
     if (ans>=65&&ans<='I')
     {
         if(number%2!=0)
@@ -73,6 +74,7 @@ int main()
         {
             printf("{x_x}");
         }
+    }
     }
     return 0;
 }
