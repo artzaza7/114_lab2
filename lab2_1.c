@@ -5,20 +5,19 @@ int main()
     scanf("%d",&a);
     scanf("%d",&b);
     scanf("%d",&c); 
-    int sum=a+b+c;
-    if(sum>=80&&sum<=100)
+    if(a+b+c>=80)
     printf("A");
-    else if(sum>=75)
+    else if(a+b+c>=75)
     printf("B");
-    else if(sum>=70)
+    else if(a+b+c>=70)
     printf("B+");
-    else if(sum>=65)
+    else if(a+b+c>=65)
     printf("C");
-    else if(sum>=60)
+    else if(a+b+c>=60)
     printf("C+");
-    else if(sum>=55)
+    else if(a+b+c>=55)
     printf("D");
-    else if(sum>=50)
+    else if(a+b+c>=50)
     printf("D+");
     else 
     printf("F");
