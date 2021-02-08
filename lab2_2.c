@@ -5,23 +5,20 @@ int main()
     char ans;
     scanf("%c",&ans); fflush(stdin);
     scanf("%f",&tel);
-    int new=tel;
     float money;
-    //printf("%d",new);
     if(ans=='A')
     {
-        money=200;
-        new=new-money;
+        money=tel;
+        float new=money-200;
         new=new*3;
-        printf("%.2f",(money+new));
+        printf("%.2f",199+new);
     }
     else
     {
-        money=400;
-        new=new-money;
-        money=300;
+        money=tel;
+        float new=money-400;
         new=new*2;
-        printf("%.2f",(money+new));
+        printf("%d",299+new);
     }
     return 0;
 }
