@@ -2,9 +2,9 @@
 int main()
 {
     int a,b,c;
-    scanf("%d",&a); fflush(stdin);
-    scanf("%d",&b); fflush(stdin);
-    scanf("%d",&c); fflush(stdin);
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c); 
     int sum=a+b+c;
     if(sum>=80)
     {
