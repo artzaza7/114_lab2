@@ -27,7 +27,6 @@ int main()
         {
             printf("{@_@}");
         }
-
     }
     else if (ans>='J'&&ans<='R')
     {
@@ -52,7 +51,7 @@ int main()
             printf("{*v*}");
         }
     }
-    else
+    else if(ans>='S'&&ans<='Z')
     {
         if(number%2!=0)
         {
