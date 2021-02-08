@@ -3,22 +3,32 @@ int main()
 {
     float tel;
     char ans;
-    scanf("%c",&ans); fflush(stdin);
+    scanf("%c",&ans);
     scanf("%f",&tel);
-    float money;
+    float sum=0;
+    int new=tel;
+    int kill=tel*100;
+    kill=kill%100;
     if(ans=='A')
     {
-        money=tel;
-        float new=money-200;
-        new=new*3;
-        printf("%.2f",199+new);
+        sum=sum+199;
+        if(tel>200)
+        {
+            new=new-200;
+            sum=sum+new*3;
+            sum=sum+kill*3/60.0;
+        }
     }
     else
     {
-        money=tel;
-        float new=money-400;
-        new=new*2;
-        printf("%.2f",299+new);
+        sum=sum+299;
+        if(tel>400)
+        {
+            new=new-400;
+            sum=sum+new*2;
+            sum=sum+kill*2/60.0;
+        }
     }
+    printf("%.2f",sum);
     return 0;
 }
