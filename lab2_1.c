@@ -1,40 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    int num[3];
-    for(int i=0;i<3;i++)
+    int a,b,c;
+    scanf("%d",&a); fflush(stdin);
+    scanf("%d",&b); fflush(stdin);
+    scanf("%d",&c); fflush(stdin);
+    int sum=a+b+c;
+    if(sum>=80)
     {
-        scanf("%d",&num[i]);
+        printf("A");
     }
-    int sum=num[1]+num[2]+num[3];
-    if(sum<=49)
-    {
-        printf("F");
-    }
-    else if(sum<=54)
-    {
-        printf("D");
-    }
-    else if(sum<=59)
-    {
-        printf("D+");
-    }
-    else if(sum<=64)
-    {
-        printf("C");
-    }
-    else if(sum<=69)
-    {
-        printf("C+");
-    }
-    else if(sum<=74)
-    {
-        printf("B");
-    }
-    else if(sum<=79)
-    {
-        printf("B+");
-    }
-    else printf("A");
+    else if(sum>=75&&sum<=79)
+    printf("B");
+    else if(sum>=70&&sum<=74)
+    printf("B+");
+    else if(sum>=65&&sum<=69)
+    printf("C");
+    else if(sum>=60&&sum<=64)
+    printf("C+");
+    else if(sum>=55&&sum<=59)
+    printf("D");
+    else if(sum>=50&&sum<=54)
+    printf("D+");
+    else printf("F");
     return 0;
 }
