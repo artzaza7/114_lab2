@@ -5,7 +5,7 @@ int main()
     int number;
     scanf("%c",&ans);
     scanf("%d",&number);
-    if(number>=1&number<=31){
+    if(number>=1&number<=31&&ans>='A'&&ans<='Z'){
     if (ans>=65&&ans<='I')
     {
         if(number%2!=0)
